@@ -1,0 +1,134 @@
+.diagnosis-history {
+  margin-top: 1.5rem;
+}
+
+.diagnosis-history__title {
+  font-size: var(--text-card-title-size);
+  font-weight: var(--text-card-title-weight);
+  color: var(--color-text-primary);
+  margin: 0 0 1rem;
+}
+
+.diagnosis-history__bp-card {
+  background-color: color-mix(in srgb, var(--color-purple) 7%, var(--color-surface));
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 1.25rem;
+}
+
+.diagnosis-history__bp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.diagnosis-history__bp-title {
+  font-size: var(--text-inner-card-title-size);
+  font-weight: var(--text-inner-card-title-weight);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.diagnosis-history__range-select {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  font-size: var(--text-body-regular-size);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  cursor: not-allowed;
+}
+
+.diagnosis-history__range-chevron {
+  font-size: 0.7rem;
+}
+
+.diagnosis-history__bp-body {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.diagnosis-history__chart-container {
+  flex: 1;
+  min-width: 0;
+  height: 220px;
+}
+
+.diagnosis-history__stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 170px;
+  flex-shrink: 0;
+}
+
+.diagnosis-history__stat-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 0.4rem;
+  border-radius: 50%;
+}
+
+.diagnosis-history__stat-dot--systolic {
+  background-color: var(--color-systolic);
+}
+
+.diagnosis-history__stat-dot--diastolic {
+  background-color: var(--color-purple);
+}
+
+.diagnosis-history__stat-label {
+  display: flex;
+  align-items: center;
+  font-size: var(--text-body-secondary-size);
+  font-weight: var(--text-body-secondary-weight);
+  color: var(--color-text-secondary);
+  margin: 0 0 0.15rem;
+}
+
+.diagnosis-history__stat-value {
+  font-size: var(--text-card-title-size);
+  font-weight: var(--text-card-title-weight);
+  color: var(--color-text-primary);
+  margin: 0 0 0.15rem;
+}
+
+.diagnosis-history__stat-status {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: var(--text-body-secondary-size);
+  font-weight: var(--text-body-secondary-weight);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.diagnosis-history__trend-icon {
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .diagnosis-history__bp-body {
+    flex-direction: column;
+  }
+
+  .diagnosis-history__stats {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .diagnosis-history__chart-container {
+    height: 220px;
+  }
+}

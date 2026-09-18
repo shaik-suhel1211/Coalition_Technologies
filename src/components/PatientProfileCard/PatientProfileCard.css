@@ -1,0 +1,101 @@
+.profile-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  max-width: 320px;
+  text-align: center;
+}
+
+.profile-card__avatar {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--color-primary-5);
+  color: var(--color-surface);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.profile-card__avatar--photo {
+  object-fit: cover;
+  background-color: transparent;
+}
+
+.profile-card__name {
+  font-size: var(--text-inner-card-title-size);
+  font-weight: var(--text-inner-card-title-weight);
+  color: var(--color-text-primary);
+  margin: 0 0 1.25rem;
+}
+
+.profile-card__details {
+  margin: 0 0 1.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.profile-card__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.profile-card__row-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-top: 0.15rem;
+  color: var(--color-primary-5);
+  flex-shrink: 0;
+}
+
+.profile-card__row-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.profile-card__row-text {
+  min-width: 0;
+}
+
+.profile-card__row-text dt {
+  font-size: var(--text-body-secondary-size);
+  font-weight: var(--text-body-secondary-weight);
+  color: var(--color-text-secondary);
+  margin: 0 0 0.15rem;
+}
+
+.profile-card__row-text dd {
+  margin: 0;
+  font-size: var(--text-body-regular-size);
+  font-weight: var(--text-body-emphasized-weight);
+  color: var(--color-text-primary);
+  overflow-wrap: break-word;
+}
+
+.profile-card__cta {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: var(--text-body-regular-size);
+  font-weight: var(--text-body-emphasized-weight);
+  color: var(--color-text-primary);
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: 999px;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    max-width: 100%;
+  }
+}

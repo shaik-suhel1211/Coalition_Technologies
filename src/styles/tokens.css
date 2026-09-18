@@ -1,0 +1,55 @@
+:root {
+  /* Brand */
+  --color-primary: #072635;
+  --color-primary-light: #0c3d5d;
+  --color-primary-2: #084c77;
+  --color-primary-3: #055a92;
+  --color-primary-4: #006aac;
+  --color-primary-5: #007bc7;
+
+  /* Accent */
+  --color-accent: #01f0d0;
+  --color-accent-light: #d8fcf7;
+  --color-success: #0bd984;
+
+  /* Purple */
+  --color-purple: #705aaa;
+  --color-purple-light: #cbc8d4;
+
+  /* Neutral */
+  --color-background: #f6f6f6;
+  --color-surface: #ffffff;
+  --color-border: #ededed;
+
+  /* Text */
+  --color-text-primary: #072635;
+  --color-text-secondary: #707070;
+  --color-text-muted: #878787;
+
+  /* Utility */
+  --color-black: #000000;
+  --color-warning: #ff6200;
+
+  /* Not in the official token list — visually estimated from the XD
+     screenshot's Systolic chart line/dot. Replace with the exact hex if
+     it becomes available. */
+  --color-systolic: #d6336c;
+
+  /* Typography */
+  --font-family-base: 'Manrope', 'Segoe UI', Arial, sans-serif;
+
+  --text-card-title-size: 24px;
+  --text-card-title-weight: 800;
+
+  --text-inner-card-title-size: 18px;
+  --text-inner-card-title-weight: 700;
+
+  --text-body-emphasized-size: 14px;
+  --text-body-emphasized-weight: 700;
+
+  --text-body-secondary-size: 14px;
+  --text-body-secondary-weight: 400;
+
+  --text-body-regular-size: 14px;
+  --text-body-regular-weight: 400;
+}

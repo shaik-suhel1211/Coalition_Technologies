@@ -1,0 +1,110 @@
+.diagnostic-list {
+  margin-top: 1.5rem;
+}
+
+.diagnostic-list__title {
+  font-size: var(--text-card-title-size);
+  font-weight: var(--text-card-title-weight);
+  color: var(--color-text-primary);
+  margin: 0 0 1rem;
+}
+
+.diagnostic-list__caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.diagnostic-list__table-wrapper {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+.diagnostic-list__table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 560px;
+}
+
+.diagnostic-list__table th,
+.diagnostic-list__table td {
+  text-align: left;
+  padding: 0.9rem 1.25rem;
+  font-size: var(--text-body-regular-size);
+  white-space: nowrap;
+}
+
+.diagnostic-list__table td {
+  white-space: normal;
+}
+
+.diagnostic-list__table thead th {
+  font-size: var(--text-body-secondary-size);
+  font-weight: var(--text-body-secondary-weight);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.diagnostic-list__table tbody th {
+  font-weight: var(--text-body-emphasized-weight);
+  color: var(--color-text-primary);
+}
+
+.diagnostic-list__table tbody td {
+  font-weight: var(--text-body-regular-weight);
+  color: var(--color-text-primary);
+}
+
+.diagnostic-list__table tbody tr:not(:last-child) th,
+.diagnostic-list__table tbody tr:not(:last-child) td {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.diagnostic-list__status {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  font-size: var(--text-body-secondary-size);
+  font-weight: var(--text-body-emphasized-weight);
+  white-space: nowrap;
+}
+
+.diagnostic-list__status--under-observation {
+  background-color: color-mix(in srgb, var(--color-warning) 15%, white);
+  color: var(--color-warning);
+}
+
+.diagnostic-list__status--under-treatment {
+  background-color: color-mix(in srgb, var(--color-primary-5) 15%, white);
+  color: var(--color-primary-5);
+}
+
+.diagnostic-list__status--resolved,
+.diagnostic-list__status--cured {
+  background-color: color-mix(in srgb, var(--color-success) 15%, white);
+  color: var(--color-success);
+}
+
+.diagnostic-list__status--inactive {
+  background-color: var(--color-border);
+  color: var(--color-text-muted);
+}
+
+.diagnostic-list__status--untreated {
+  background-color: color-mix(in srgb, var(--color-purple) 15%, white);
+  color: var(--color-purple);
+}
+
+@media (max-width: 480px) {
+  .diagnostic-list__table th,
+  .diagnostic-list__table td {
+    padding: 0.75rem 1rem;
+  }
+}

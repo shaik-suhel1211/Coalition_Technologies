@@ -1,0 +1,28 @@
+.health-metrics {
+  margin-top: 1.5rem;
+}
+
+.health-metrics__title {
+  font-size: var(--text-card-title-size);
+  font-weight: var(--text-card-title-weight);
+  color: var(--color-text-primary);
+  margin: 0 0 1rem;
+}
+
+.health-metrics__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .health-metrics__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .health-metrics__grid {
+    grid-template-columns: 1fr;
+  }
+}

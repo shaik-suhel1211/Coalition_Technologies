@@ -1,0 +1,48 @@
+.health-metric-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.health-metric-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 0.9rem;
+}
+
+.health-metric-card__icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.health-metric-card__label {
+  font-size: var(--text-body-secondary-size);
+  font-weight: var(--text-body-secondary-weight);
+  color: var(--color-text-secondary);
+  margin: 0 0 0.5rem;
+}
+
+.health-metric-card__value {
+  font-size: var(--text-card-title-size);
+  font-weight: var(--text-card-title-weight);
+  color: var(--color-text-primary);
+  margin: 0 0 0.35rem;
+}
+
+.health-metric-card__unit {
+  font-size: var(--text-body-secondary-size);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-left: 0.35rem;
+}
+
+.health-metric-card__status {
+  font-size: var(--text-body-secondary-size);
+  font-weight: var(--text-body-emphasized-weight);
+  margin: 0;
+}

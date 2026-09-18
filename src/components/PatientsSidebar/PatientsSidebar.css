@@ -1,0 +1,133 @@
+.patients-sidebar {
+  width: 260px;
+  flex-shrink: 0;
+  background-color: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  padding: 1.25rem 0.75rem;
+}
+
+.patients-sidebar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.patients-sidebar__title {
+  font-size: var(--text-inner-card-title-size);
+  font-weight: var(--text-inner-card-title-weight);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.patients-sidebar__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  color: var(--color-text-secondary);
+  cursor: not-allowed;
+}
+
+.patients-sidebar__search svg {
+  width: 18px;
+  height: 18px;
+}
+
+.patients-sidebar__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.patient-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.patient-item[data-active] {
+  background-color: var(--color-accent-light);
+}
+
+.patient-item__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--color-primary-5);
+  color: var(--color-surface);
+  font-size: 0.7rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.patient-item__info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.patient-item__name {
+  font-size: var(--text-body-regular-size);
+  font-weight: var(--text-body-emphasized-weight);
+  color: var(--color-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.patient-item[data-active] .patient-item__name {
+  color: var(--color-primary);
+}
+
+.patient-item__meta {
+  font-size: 12px;
+  font-weight: var(--text-body-secondary-weight);
+  color: var(--color-text-secondary);
+}
+
+.patient-item__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 28px;
+  flex-shrink: 0;
+  border: none;
+  background: transparent;
+  color: var(--color-text-muted);
+  cursor: not-allowed;
+}
+
+.patient-item__menu svg {
+  width: 4px;
+  height: 18px;
+}
+
+@media (max-width: 900px) {
+  .patients-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .patients-sidebar__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .patient-item {
+    flex: 1 1 auto;
+    min-width: 200px;
+  }
+}
